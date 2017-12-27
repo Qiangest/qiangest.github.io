@@ -37,7 +37,7 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2015
 
   # Icon between year and copyright info.
   icon: user
@@ -118,18 +118,18 @@ scheme: Gemini
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  GitHub: https://github.com/Qiangest || github
-  E-Mail: mailto:yangqiang1201@foxmail.com || envelope
-  Weibo: https://weibo.com/yqforever || weibo
-  #Google: https://plus.google.com/yourname || google
-  Twitter: https://twitter.com/CheraYang || twitter
-  #FB Page: https://www.facebook.com/yourname || facebook
-  #VK Group: https://vk.com/yourname || vk
-  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
-  #YouTube: https://youtube.com/yourname || youtube
-  Instagram: https://www.instagram.com/keung.yang || instagram
-  #Skype: skype:yourname?call|chat || skype
+# social: 
+GitHub: https://github.com/Qiangest || github
+E-Mail: mailto:yangqiang1201@foxmail.com || envelope
+Weibo: https://weibo.com/yqforever || weibo
+#Google: https://plus.google.com/yourname || google
+Twitter: https://twitter.com/CheraYang || twitter
+#FB Page: https://www.facebook.com/yourname || facebook
+#VK Group: https://vk.com/yourname || vk
+#StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+#YouTube: https://youtube.com/yourname || youtube
+Instagram: https://www.instagram.com/keung.yang || instagram
+#Skype: skype:yourname?call|chat || skype
 
 social_icons:
   enable: true
