@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-08-27 19:27:32
+ * @version $Id$
+ */
+*{
+	margin: 1;
+	padding: 0;
+}
+body{background-image: url(/images/bg1.jpg); margin-top: 0; margin-left: 0px; }
+ header, section, footer { display: block; margin: 0; padding: 0 }
+body { color: #000; 
+    -webkit-user-select: none; 
+    -webkit-text-size-adjust: none;
+     font:normal 12px/200% "Georgia", serif;  padding-bottom: 50px; }
+a{color: #224b8d; 
+    text-decoration: none; }
+a:hover{text-decoration: underline; color: #880000;}
+
+
+.clearfix{content: ""; display: block;clear:both; width: 100%; float: none;}
+
+.header,.screen,.footer{ clear: both;}
+
+
+.header{height: 50px;
+         width: 100%; }
+.container{
+	width: 1500px;
+	margin: auto;
+        }
+.banner{height: 350px; margin-top: 30px;}
+.article{height: 500px; margin-top: 10px; }
+.footer{
+	height: 300px;
+	margin-top: 0px;
+	margin-bottom:1px;
+}
+/*header*/
+h1{color: #880000; 
+    height: 50px;
+    line-height: 50px; 
+    border-bottom-style: 
+    double ;border-color: #808080;
+    font-family: Georgia;}
+
+/*section*/
+
+.photo{ height: 350px;
+        width: 240px;
+        float: left;
+        text-align: center;}
+.photo img{
+	height: 310px;
+	line-height: 350px;
+}
+
+
+.b-text{height: 350px;
+        width: 900px;
+        float: left;}
+h2{margin-left: 3em;
+    font-family: "KaiTi";
+    font-size: 3em;
+    margin-top: 0.5em;}
+h2 span{display: block; 
+        font-size:24px;
+        font-weight: none;
+        color: #333;
+        font-family: "Georgia";
+        margin-top:5.5px; }
+.present{margin-top: 1.7em;
+margin-left: 7em}
+.present li{font-size: 1.3em;
+        margin-left: 1.5em;
+        color: #333;
+        height: 15px;
+        line-height: 10px;}
+.present li a{text-decoration: none;
+                color: #224b8d;}
+.present li a:hover{text-decoration: underline; color: #880000;}
+.present2{margin-top: 2em;}
+.present2 li{font-size: 1.3em;
+        margin-left: 7em;
+        color: #333;
+        height: 40px;
+        line-height: 20px;}
+.present2 a{color:#333; text-decoration: none;}
+.present2 a span{margin-left: 3em;}
+
+
+.b-logo{height: 350px;
+        width: 240px;
+        float: right;}
+.b-logo a img{border:none;}
+.meng img{
+	width: 180px;
+	height: 100px;
+	margin-left: 2em;
+	margin-top: 4em;
+}
+.ying img{
+	width: 140px;
+	height: 150px;
+	margin-left: 4em;
+}
+
+
+/*article*/    
+h3{
+	color: #880000;
+	font-size: 2em;
+	border-bottom: 1px dashed #999;
+	height: 30px;
+    }
+
+.miss{height: 60px;}    
+.miss p{font-size: 1.3em;
+        color: #222;}
+.miss p a{color: #224b8d; 
+            text-decoration: none; }
+.miss p a:hover{text-decoration: underline; color: #880000;}
+
+.you{height: 100px; margin-top: 10px;}
+.you p{font-size: 1.3em;
+        color: #222; 
+        height: 35px; 
+        line-height: 35px;}
+
+.item1{height: 130px;
+        margin-top: 20px; }
+.item1 p{font-size: 1.3em;
+        color: #222; 
+        height: 25px; 
+        line-height: 25px;
+        padding-top: 10px;}
+
+.item2{height: 130px; 
+        margin-top: 30px;}
+.item2 p,li{
+	font-size: 1.3em;
+	color: #222;
+	height: 15px;
+	line-height: 25px;
+	padding-top: 10px;
+}
+.item2 li{margin-left: 2em; }
+.item2 li .dian{font-weight: bold;
+                font-size: 1.3em;
+                color: #333;}
+.item2 li .dian:before{width: 6px;
+                    height: 6px;
+                    border-radius: 6px;
+                    background-color: #333;content: "";
+                    display: block; 
+                    position: relative;
+                    top: 10px; right: 0.8em; }
+
+/*footer*/
+.aini h4{font-size: 1.5em; 
+    color: #333;
+	margin-bottom:1px;}
+.aini p{font-size: 1.3em;
+        color: #222;
+		margin-bottom:1px;
+		margin-top:1px;
+		font-weight:bold;
+		}
+.end {margin-top: 3em; 
+        width: 100%; 
+        border-top: 1px solid #808080;}
+.end p{float: right; 
+        margin-top: 1em;}
