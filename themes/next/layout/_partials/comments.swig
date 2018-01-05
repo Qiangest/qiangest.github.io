@@ -1,6 +1,15 @@
+{%
+  set page.comments = 1
+%}
+
 {% if page.comments %}
 
-  {% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}
+{% if theme.livere_uid %}
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="{{ theme.livere_uid }}"></div>
+    </div>
+
+  {% elseif (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}
     <div class="comments" id="comments">
       <div class="ds-thread" data-thread-key="{{ page.path }}"
            data-title="{{ page.title }}" data-url="{{ page.permalink }}">
@@ -42,11 +51,6 @@
       <div id="uyan_frame"></div>
     </div>
 
-  {% elseif theme.livere_uid %}
-    <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="{{ theme.livere_uid }}"></div>
-    </div>
-
   {% elseif theme.changyan.appid and theme.changyan.appkey %}
     <div class="comments" id="comments">
       <div id="SOHUCS"></div>
@@ -68,3 +72,24 @@
   {% endif %}
 
 {% endif %}
+
+
+<!-- 来必力City版安装代码 ，硬编程-->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMjk1NC85NTE1">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+
