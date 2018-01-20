@@ -1,3 +1,9 @@
+{% if theme.footer.custom_text %}
+  <div class="footer-custom">{#
+  #}{{ theme.footer.custom_text }}{#
+#}</div>
+{% endif %}
+
 <div class="copyright">{#
 #}{% set current = date(Date.now(), "YYYY") %}{#
 #}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
@@ -27,6 +33,7 @@
 #}</div>
 {% endif %}
 
+
 {% if theme.footer.powered and theme.footer.theme.enable %}
   <span class="post-meta-divider">|</span>
 {% endif %}
@@ -40,9 +47,10 @@
 #}</div>
 {% endif %}
 
-{% if theme.footer.custom_text %}
-  <div class="footer-custom">{#
-  #}{{ theme.footer.custom_text }}{#
-#}</div>
-{% endif %}
+
+
+<!--div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">已经写了{{ totalcount(site) }}字</span>
+</div-->
 
